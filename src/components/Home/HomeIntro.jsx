@@ -22,7 +22,7 @@ const HomeIntro = () => {
       
       <div className="mt-20 flex items-center justify-between">
         
-        <div className="px-5 relative flex flex-col items-center gap-4 text-info text-xl" >
+        <div className="px-5  flex  flex-col items-center gap-4 text-info text-xl" >
           <Link to='https://www.linkedin.com/' target={'blank'}>
             <FaLinkedin className=""></FaLinkedin>
           </Link>
@@ -36,9 +36,8 @@ const HomeIntro = () => {
         </div>
 
         <div className="">
-        <img
-          
-          style={{ borderRadius: "700px 700px 20px 20px" }}
+        <img          
+          style={{ borderRadius: "200px 200px 10px 10px" }}
           src={profilePicture}
           alt="picture"
         />

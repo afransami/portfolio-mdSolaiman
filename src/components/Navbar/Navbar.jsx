@@ -8,9 +8,9 @@ const Navbar = () => {
   const NavOptions = (
     <>
       <li>
-        <Link to="#home" className="text-info">
+        <a href="#home" className="text-info">
           <ImHome />
-        </Link>
+        </a>{" "}
       </li>
       <li>
         <a href="#about" className="text-info">
@@ -20,19 +20,19 @@ const Navbar = () => {
       <li>
         <a href="#projects" className="text-info">
           <ImDisplay></ImDisplay>
-        </a>
+        </a>{" "}
       </li>
       <li>
         <a href="#resume" className="text-info">
           <MdEditDocument></MdEditDocument>
-        </a>
+        </a>{" "}
       </li>
     </>
   );
 
   return (
-    <div className="fixed bottom-8 bg-indigo-500 bg-opacity-20 rounded-full">
-      <div className="menu menu-horizontal px-5 gap-8 text-2xl">
+    <div className="fixed bottom-8 bg-indigo-500 bg-opacity-20 rounded-full z-10">
+      <div className="relative menu menu-horizontal px-5 gap-8 text-2xl">
         {NavOptions}
       </div>
     </div>
