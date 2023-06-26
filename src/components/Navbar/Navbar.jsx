@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaUserTie } from "react-icons/fa";
+import { FaUserTie, FaBrain } from "react-icons/fa";
 import { ImDisplay, ImHome } from "react-icons/im";
 import { MdEditDocument } from "react-icons/md";
 
@@ -18,6 +18,11 @@ const Navbar = () => {
         </a>
       </li>
       <li>
+        <a href="#skill" className="text-info">
+        <FaBrain></FaBrain>
+        </a>
+      </li>
+      <li>
         <a href="#projects" className="text-info">
           <ImDisplay></ImDisplay>
         </a>{" "}
@@ -32,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed bottom-8 bg-indigo-500 bg-opacity-20 rounded-full z-10">
-      <div className="relative menu menu-horizontal px-5 gap-8 text-2xl">
+      <div className="relative menu menu-horizontal px-2 gap-4 text-2xl">
         {NavOptions}
       </div>
     </div>

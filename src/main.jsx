@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <div className='bg-indigo-950 bg-gradient-to-bl from-slate-950 text-white'>
+  <div className='bg-indigo-950 bg-gradient-to-br from-slate-950 text-white'>
   <RouterProvider router={router} />
   </div>
   </React.StrictMode>,

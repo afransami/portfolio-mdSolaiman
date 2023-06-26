@@ -4,6 +4,7 @@ import About from '../pages/about';
 import LoadingScreen from '../pages/LoadingScreen';
 import Projects from '../pages/Projects';
 import Resume from '../pages/Resume';
+import Skill from '../pages/Skill';
 import HomeIntro from './HomeIntro';
 
 const Home = () => {
@@ -18,8 +19,9 @@ const Home = () => {
                 !loading ? (
             <>
             <HomeIntro></HomeIntro>
-            <About></About>       
-            <Projects></Projects>
+            <About></About>
+            <Skill></Skill>
+            {/* <Projects></Projects> */}
             <Resume></Resume>
             </>):
             (<LoadingScreen></LoadingScreen>)
