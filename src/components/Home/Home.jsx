@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../Navbar/Navbar';
 import About from '../pages/about';
 import LoadingScreen from '../pages/LoadingScreen';
 import Projects from '../pages/Projects';
@@ -20,8 +19,8 @@ const Home = () => {
             <>
             <HomeIntro></HomeIntro>
             <About></About>
-            <Skill></Skill>
-            {/* <Projects></Projects> */}
+            <Skill></Skill>          
+            <Projects></Projects>
             <Resume></Resume>
             </>):
             (<LoadingScreen></LoadingScreen>)

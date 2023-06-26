@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card .img {
+    background-position: top;
+    transition: ease-in-out 8s;
+    overflow-y: hidden;
+}
+.card .img:hover {
+    background-position: bottom;
+    
+}

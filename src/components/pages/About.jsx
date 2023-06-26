@@ -20,7 +20,7 @@ const About = () => {
       <div className="grid lg:grid-cols-2 gap-8 mt-20">
         <div className="max-w-7xl rounded-xl relative ">
           <img
-            className="rounded-xl border-b-8 border-r-8 lg:hover:scale-110 w-full transition-all"
+            className="rounded-xl border-t-8 border-l-8 lg:hover:scale-110 w-full rounded-tl-lg rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%] transition-all"
             src={pictureAbout}
             alt="about me"
           />
@@ -76,10 +76,10 @@ const About = () => {
               If you have any question/query, Please feel free to nock me.
             </p>
             <div className="flex gap-4 mt-8">
-              <button className="btn btn-outline btn-info border-1 border-l-0 border-r-0 border-b-4">
-                <FaDownload></FaDownload>
-                Resume
-              </button>
+            <a href="../../../src/assets/Resume of Md Solaiman.pdf" target="_blank" className="btn btn-outline btn-info border-1 border-l-0 border-r-0 border-b-4">
+              <FaDownload></FaDownload>        
+              Resume
+            </a>
               <button className="btn btn-outline btn-info border-1 border-l-0 border-r-0 border-b-4">
                 <FaPhone></FaPhone>
                 Lets Talk

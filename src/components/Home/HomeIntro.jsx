@@ -12,7 +12,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { PiArrowFatLinesDown } from "react-icons/pi";
 
+        
+
 const HomeIntro = () => {
+  
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -29,10 +33,10 @@ const HomeIntro = () => {
           <h1 className="text-4xl font-bold text-info">Md Solaiman</h1>
           <h5 className="text-2xl text-gray-300">Front-end Developer</h5>
           <div className="flex gap-4 mt-8">
-            <button className="btn btn-outline btn-info border-1 border-l-0 border-r-0 border-b-4">
-              <FaDownload></FaDownload>
+            <a href="../../../src/assets/Resume of Md Solaiman.pdf" target="_blank" className="btn btn-outline btn-info border-1 border-l-0 border-r-0 border-b-4">
+              <FaDownload></FaDownload>        
               Resume
-            </button>
+            </a>
             <button className="btn btn-outline btn-info border-l-0 border-r-0 border-b-4">
               <FaPhone></FaPhone>
               Lets Talk
@@ -46,7 +50,7 @@ const HomeIntro = () => {
           data-aos-duration="1000"
         >
           <img
-            className=" w-full h-full object-cover rounded-2xl rounded-tl-[50%] rounded-tr-[50%] rounded-br-lg rounded-bl-[50%] transition-all"
+            className=" w-full h-full object-cover rounded-2xl border-b-8 border-r-8 rounded-tl-[50%] rounded-tr-[50%] rounded-br-lg rounded-bl-[50%] transition-all"
             src={profilePicture}
             alt="picture"
           />
@@ -75,7 +79,7 @@ const HomeIntro = () => {
           <p>
             <PiArrowFatLinesDown className="h-full text-info text-3xl"></PiArrowFatLinesDown>
           </p>
-          <p className=" rotate-90 text-info">Srcoll Down</p>
+          <p className=" rotate-90 text-info">Scroll Down</p>          
           <p>
             <PiArrowFatLinesDown className="h-full text-info text-3xl"></PiArrowFatLinesDown>
           </p>
