@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import About from '../pages/about';
 import LoadingScreen from '../pages/LoadingScreen';
 import Projects from '../pages/Projects';
-import Resume from '../pages/Resume';
 import Skill from '../pages/Skill';
 import HomeIntro from './HomeIntro';
+import Contact from '../pages/Contact';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
   
@@ -20,8 +21,9 @@ const Home = () => {
             <HomeIntro></HomeIntro>
             <About></About>
             <Skill></Skill>          
-            <Projects></Projects>
-            <Resume></Resume>
+            <Projects></Projects>            
+            <Contact></Contact>
+            <Footer></Footer>
             </>):
             (<LoadingScreen></LoadingScreen>)
             }

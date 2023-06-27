@@ -4,31 +4,44 @@ import { FaUserTie, FaBrain } from "react-icons/fa";
 import { ImDisplay, ImHome } from "react-icons/im";
 import { MdEditDocument } from "react-icons/md";
 
+
 const Navbar = () => {
+  const [isActive, setIsActive] = useState();
+
   const NavOptions = (
     <>
       <li>
-        <a href="#home" className="text-info">
+        <a href="#home" className={` ${isActive ? 'text-info' : ' '}`}
+      onClick={() => setIsActive(!isActive)}
+    >
           <ImHome />
         </a>{" "}
       </li>
       <li>
-        <a href="#about" className="text-info">
+        <a href="#about" className={` ${isActive ? 'text-info' : ' '}`}
+      onClick={() => setIsActive(!isActive)}
+    >
           <FaUserTie></FaUserTie>
         </a>
       </li>
       <li>
-        <a href="#skill" className="text-info">
+        <a href="#skill" className={` ${isActive ? 'text-info' : ' '}`}
+      onClick={() => setIsActive(!isActive)}
+    >
         <FaBrain></FaBrain>
         </a>
       </li>
       <li>
-        <a href="#projects" className="text-info">
+        <a href="#projects" className={` ${isActive ? 'text-info' : ' '}`}
+      onClick={() => setIsActive(!isActive)}
+    >
           <ImDisplay></ImDisplay>
         </a>{" "}
       </li>
       <li>
-        <a href="#resume" className="text-info">
+        <a href="#contact" className={` ${isActive ? 'text-info' : ' '}`}
+      onClick={() => setIsActive(!isActive)}
+    >
           <MdEditDocument></MdEditDocument>
         </a>{" "}
       </li>

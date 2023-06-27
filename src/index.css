@@ -11,3 +11,31 @@
     background-position: bottom;
     
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* .custom-shape-divider-top-1687880756 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1687880756 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+} */
+
+/* li a.active {
+    color:indigo;    
+} */
+
+/* li a {
+    background-color: transparent;
+} */

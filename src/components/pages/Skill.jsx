@@ -12,20 +12,21 @@ import { SiFirebase, SiJavascript, SiJsonwebtokens, SiMongodb } from "react-icon
 const Skill = () => {
 
   return (
-    <div id="skill" className="my-20">
+    <div id="skill" className="mb-20">
       <div
         className="container mx-auto mb-10 transition-all"
-        data-aos="slide-right"
-        data-aos-duration="1000"
+        data-aos="fade-up"
+        data-aos-duration="1000"        
       >
-        <div className="flex flex-col items-center mt-20">
+        <div className="flex flex-col items-center mt-10">
         <h1 className="text-xl text-gray-300">Get To Know</h1>
         <h1 className="text-center text-4xl font-bold text-info"> My Skills</h1>
         </div>
         
-        <div className="grid grid-cols-2 gap-16  mt-8 text-3xl text-info">
+        <div className="grid grid-cols-2 gap-16  mt-8 text-xl text-info"
+        >
           <div className="space-y-8">
-            <h1 className="text-4xl font-bold text-info mb-5 text-center">Front-end</h1>
+            <h1 className="text-3xl font-bold text-info mb-5 text-center">Front-end</h1>
             <p>
               <FaHtml5></FaHtml5>HTML
               <ProgressBar
@@ -83,7 +84,7 @@ const Skill = () => {
 
 
           <div className="space-y-8">
-          <h1 className="text-4xl font-bold text-info mb-5 text-center">Back-end</h1>
+          <h1 className="text-3xl font-bold text-info mb-5 text-center">Back-end</h1>
             
             <p>
               <FaNodeJs></FaNodeJs>NodeJs
