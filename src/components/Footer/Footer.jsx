@@ -3,7 +3,6 @@ import signature from "../../../src/assets/picture/md-solaiman-high-resolution-l
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
-
   return (
     <footer className="footer items-center flex-col-reverse justify-between flex bg-transparent text-neutral-content pb-28 ">
       <div className="items-center flex flex-col">
@@ -16,13 +15,13 @@ const Footer = () => {
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end text-4xl text-info">
         <a href="https://www.linkedin.com/" target={"blank"}>
-        <FaLinkedin></FaLinkedin>
+          <FaLinkedin></FaLinkedin>
         </a>
         <a href="https://github.com/afransami/" target={"blank"}>
-        <FaGithub></FaGithub>
+          <FaGithub></FaGithub>
         </a>
         <a href="https://www.facebook.com/afransami/" target={"blank"}>
-        <FaFacebook></FaFacebook>
+          <FaFacebook></FaFacebook>
         </a>
       </div>
     </footer>

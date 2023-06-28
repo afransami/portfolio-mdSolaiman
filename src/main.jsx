@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./components/Home/Home.jsx";
-import About from "./components/pages/about.jsx";
-import Resume from "./components/pages/Resume.jsx";
-import Projects from "./components/pages/Projects.jsx";
 import Main from "./components/Layouts/Main.jsx";
 import { Toaster } from "react-hot-toast";
 
@@ -19,25 +15,13 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      // {
-      //   path: "about",
-      //   element: <About></About>
-      // },
-      // {
-      //   path: "resume",
-      //   element: <Resume></Resume>
-      // },
-      // {
-      //   path: "projects",
-      //   element: <Projects></Projects>
-      // },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className="bg-slate-900 text-white px-2 ">
+    <div className="bg-slate-900 text-white">
       <Toaster />
       <RouterProvider router={router} />
     </div>

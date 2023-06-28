@@ -1,29 +1,30 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import cardImage from "../../assets/screencapture-music-school-client-web-app-2023-06-26-23_28_44.png";
 const Projects = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
   return (
-    <section id="projects" className="mb-20"
-    data-aos="zoom-in"
-          data-aos-duration="1000"
-    
+    <section
+      id="projects"
+      className=""
+      data-aos="zoom-in"
+      data-aos-duration="1000"
     >
-      <div className="flex flex-col items-center my-20">
+      <div className="flex flex-col items-center">
         <h1 className="text-xl text-gray-300">What Projects I did</h1>
         <h1 className="text-4xl font-bold text-info mb-10">My Projects</h1>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mb-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mb-10">
 
-          <div className="card max-w-sm h-auto  bg-slate-900 text-white shadow-xl">
+          <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
             <figure>
               <img
-                className="w-96  bg-cover"
-                src="https://i.ibb.co/7tCGmdf/Screenshot-2.png"
+                className="w-96 card-image"
+                src={cardImage}
                 alt="musicalMingle"
               />
             </figure>
@@ -54,19 +55,19 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </div>       
 
-          <div className="card max-w-sm h-96  bg-slate-900 text-white shadow-xl">
+          <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
             <figure>
               <img
-                className="w-96 h-auto bg-fit"
-                src="https://i.ibb.co/6HZF0CT/Screenshot-4.png"
-                alt="hublotToys"
+                className="w-96 card-image"
+                src="https://i.ibb.co/sjQHT8N/screencapture-assignment-11-client-f3cb1-web-app-2023-06-28-17-38-20.png"
+                alt="Hublot Toys"
               />
             </figure>
             <div className="card-body bg-indigo-950 rounded-b-lg">
-              <h2 className="card-title">Hublot Toys</h2>
-              <p>An E-commerce MERN stack website.</p>
+              <h2 className="card-title">Thai Taste</h2>
+              <p>A chef's MERN stack website.</p>
               <div className="card-actions justify-end">
                 <a
                   href="https://assignment-11-client-f3cb1.web.app/"
@@ -93,16 +94,16 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="card max-w-sm h-96  bg-slate-900 text-white shadow-xl">
+          <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
             <figure>
               <img
-                className="w-96 h-auto bg-fit"
-                src="https://i.ibb.co/253TYzb/Screenshot-7.png"
-                alt="ThaiTaste"
+                className="w-96 card-image"
+                src="https://i.ibb.co/DzMDxpP/screencapture-module-10-4101c-web-app-2023-06-28-17-36-25.png"
+                alt="Thai Taste"
               />
             </figure>
             <div className="card-body bg-indigo-950 rounded-b-lg">
-              <h2 className="card-title">Hublot Toys</h2>
+              <h2 className="card-title">Thai Taste</h2>
               <p>A chef's MERN stack website.</p>
               <div className="card-actions justify-end">
                 <a
@@ -129,7 +130,6 @@ const Projects = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

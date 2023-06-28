@@ -1,32 +1,35 @@
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
-import {
-  FaHtml5,
-  FaNodeJs,
-  FaPhone,
-  FaReact,
-} from "react-icons/fa";
+import { FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { BiLogoCss3 } from "react-icons/bi";
-import { SiFirebase, SiJavascript, SiJsonwebtokens, SiMongodb } from "react-icons/si";
+import {
+  SiFirebase,
+  SiJavascript,
+  SiJsonwebtokens,
+  SiMongodb,
+} from "react-icons/si";
 
 const Skill = () => {
-
   return (
     <div id="skill" className="mb-20">
       <div
         className="container mx-auto mb-10 transition-all"
-        data-aos="fade-up"
-        data-aos-duration="1000"        
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       >
         <div className="flex flex-col items-center mt-10">
-        <h1 className="text-xl text-gray-300">Get To Know</h1>
-        <h1 className="text-center text-4xl font-bold text-info"> My Skills</h1>
+          <h1 className="text-xl text-gray-300">Get To Know</h1>
+          <h1 className="text-center text-4xl font-bold text-info">
+            {" "}
+            My Skills
+          </h1>
         </div>
-        
-        <div className="grid grid-cols-2 gap-16  mt-8 text-xl text-info"
-        >
+
+        <div className="grid grid-cols-2 gap-16  mt-8 text-xl text-info">
           <div className="space-y-8">
-            <h1 className="text-3xl font-bold text-info mb-5 text-center">Front-end</h1>
+            <h1 className="text-3xl font-bold text-info mb-5 text-center">
+              Front-end
+            </h1>
             <p>
               <FaHtml5></FaHtml5>HTML
               <ProgressBar
@@ -34,7 +37,7 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px" 
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"
@@ -47,13 +50,13 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px" 
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"
               />
             </p>
-                     
+
             <p>
               <SiJavascript></SiJavascript>Javascript
               <ProgressBar
@@ -61,7 +64,7 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px" 
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"
@@ -74,7 +77,7 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px"                
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"
@@ -82,10 +85,11 @@ const Skill = () => {
             </p>
           </div>
 
-
           <div className="space-y-8">
-          <h1 className="text-3xl font-bold text-info mb-5 text-center">Back-end</h1>
-            
+            <h1 className="text-3xl font-bold text-info mb-5 text-center">
+              Back-end
+            </h1>
+
             <p>
               <FaNodeJs></FaNodeJs>NodeJs
               <ProgressBar
@@ -93,7 +97,7 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px" 
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"
@@ -106,7 +110,7 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px" 
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"
@@ -119,7 +123,7 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px" 
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"
@@ -132,7 +136,7 @@ const Skill = () => {
                 maxCompleted={100}
                 bgColor="#0edbe0"
                 labelColor="#0404b7"
-                height="20px" 
+                height="20px"
                 transitionTimingFunction="ease-in"
                 animateOnRender
                 dir="auto"

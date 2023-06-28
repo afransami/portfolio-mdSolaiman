@@ -1,34 +1,47 @@
 import React from "react";
 import { FaAward, FaDownload, FaPhone } from "react-icons/fa";
 import { PiUsersThree, PiProjectorScreenChart } from "react-icons/pi";
-import pictureAbout from "../../assets/picture/picture-2.jpg";
 import { handleDownload } from "./PdfDownload";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <section id="about" className="pb-0">
+    <div
+      id="about"
+      className="pb-0"      
+    >
       <div className="flex flex-col items-center mb-20">
         <h1 className="text-xl text-gray-300">Get To Know</h1>
         <h1 className="text-4xl font-bold text-info">About Me</h1>
       </div>
 
-      <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-around items-center">
+      <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-around items-start">
 
-        <div className="rounded-xl relative items-center justify-center flex ">
+        <div className="image rounded-xl relative flex items-center justify-center mb-10"
+        data-aos="zoom-out"
+        data-aos-duration="1000">
           <img
-            className="rounded-xl border-t-8 border-l-8 lg:hover:scale-110 sm:max-w-sm sm:h-auto lg:max-w-lg lg:h-auto rounded-tl-lg rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%] transition-all"
-            src={pictureAbout}
+            className="rounded-xl border-t-8 border-l-8 sm:max-w-sm sm:h-auto lg:max-w-lg lg:h-auto rounded-tl-lg rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%] transition-all"
+            src="https://i.ibb.co/jhnTJkV/picture-2.jpg"
             alt="about me"
           />
           <div className="absolute bg-gradient-to-b from-transparent to-indigo-950 opacity-90"></div>
         </div>
 
-        <div className="flex flex-col gap-0 justify-between items-start">
-          
+        <div className="lg:flex flex-col gap-4 justify-center items-start "
+        data-aos="zoom-in"
+        data-aos-duration="1000">
+
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4 mb-10">
 
             <div className="card w-40 bg-indigo-900">
-              <div className="flex flex-col items-center  py-5 justify-center hover:text-info lg:hover:scale-110">
+            <div className="flex flex-col items-center py-5 justify-center hover:text-info lg:hover:scale-110">
                 <p className="text-2xl">
                   <FaAward></FaAward>
                 </p>
@@ -43,7 +56,7 @@ const About = () => {
                   <PiUsersThree></PiUsersThree>
                 </p>
                 <h2 className="px-4">Client</h2>
-                <small>30+ Satisfied Clients</small>
+                <small> 30+ Satisfied Clients</small>
               </div>
             </div>
 
@@ -56,6 +69,7 @@ const About = () => {
                 <small>12+ Live Projects</small>
               </div>
             </div>
+
           </div>
 
           <div className="w-full text-justify lg:flex flex-col ">
@@ -74,26 +88,27 @@ const About = () => {
               If you have any question/query, Please feel free to nock me.
             </p>
             <div className="flex gap-4 mt-8 left-0">
-            <button
-              className="btn btn-outline btn-info border-1 border-l-0 border-r-0 border-b-4"
-              onClick={handleDownload}
-            >
-              <FaDownload></FaDownload>
-              Resume
-            </button>
-            <button className="btn btn-outline btn-info border-l-0 border-r-0 border-b-4">
-              <FaPhone></FaPhone>
-              Lets Talk
-            </button>
+              <button
+                className="btn btn-outline btn-info border-1 border-l-0 border-r-0 border-b-4"
+                onClick={handleDownload}
+              >
+                <FaDownload></FaDownload>
+                Resume
+              </button>
+              <a
+                href="#contact"
+                className="btn btn-outline btn-info border-l-0 border-r-0 border-b-4"
+              >
+                <FaPhone></FaPhone>
+                Lets Talk
+              </a>
+            </div>
           </div>
-          </div>
-        </div>
 
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
 export default About;
-
-// grid lg:grid-cols-1 md:grid-cols-2 sm:grid-cols-2

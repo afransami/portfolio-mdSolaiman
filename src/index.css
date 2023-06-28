@@ -2,40 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-.card .img {
-    background-position: top;
-    transition: ease-in-out 8s;
-    overflow-y: hidden;
-}
-.card .img:hover {
-    background-position: bottom;
-    
+
+
+/* Card.css */
+.card-div {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
 }
 
-html{
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+    background-size: cover;
+    transition: ease-in-out 2s;
+    transform: translateY(38%);
+}
+
+.card-image:hover {
+    transform: translateY(-42%);
+}
+
+
+html {
     scroll-behavior: smooth;
 }
 
-/* .custom-shape-divider-top-1687880756 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+.image img {
+    animation: image 8s ease-in-out infinite 1s;
 }
 
-.custom-shape-divider-top-1687880756 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 150px;
-} */
+@keyframes image {
 
-/* li a.active {
-    color:indigo;    
-} */
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 
-/* li a {
-    background-color: transparent;
-} */
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}

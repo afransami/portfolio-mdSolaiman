@@ -7,15 +7,13 @@ import {
   FaPhone,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import profilePicture from "../../assets/picture/picture-2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { PiArrowFatLinesDown } from "react-icons/pi";
 import { handleDownload } from "../pages/PdfDownload";
 import Typewriter from "typewriter-effect";
 import { Link as ScrollLink } from "react-scroll";
-import 'tailwindcss/tailwind.css';
-
+import "tailwindcss/tailwind.css";
 
 const HomeIntro = () => {
   useEffect(() => {
@@ -24,10 +22,10 @@ const HomeIntro = () => {
   }, []);
   return (
     <div className="text-white mt-20 relative" id="home">
-      <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-0 justify-between items-center ">
+      <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-between items-center ">
         <div
           className="flex flex-col justify-center items-start mb-10 transition-all"
-          data-aos="slide-right"
+          data-aos="zoom-in"
           data-aos-duration="1000"
         >
           <h5 className="text-2xl text-gray-300 text-justify">
@@ -45,11 +43,11 @@ const HomeIntro = () => {
                 }}
               />
             </span>
-            I specialize in creating dynamic and responsive applications using
+            <span className="text-xl">I specialize in creating dynamic and responsive applications using
             React, Node.js, Express, and MongoDB. With a focus on delivering
             high-quality solutions, I excel in crafting engaging user interfaces
             and building robust back-end systems. Let's collaborate and bring
-            your ideas to life with the power of React and the MERN stack!"
+            your ideas to life with the power of React and the MERN stack!"</span>
           </h5>
           <div className="flex gap-4 justify-between items-start mt-8">
             <button
@@ -59,33 +57,35 @@ const HomeIntro = () => {
               <FaDownload></FaDownload>
               Resume
             </button>
-            <button className="btn btn-outline btn-info border-l-0 border-r-0 border-b-4">
+            <a
+              href="#contact"
+              className="btn btn-outline btn-info border-l-0 border-r-0 border-b-4"
+            >
               <FaPhone></FaPhone>
               Lets Talk
-            </button>
+            </a>
           </div>
         </div>
 
         <div
-          className="relative w-full h-full flex justify-center items-center"
-          data-aos="zoom-in"
+          className="image w-full h-auto flex justify-center items-center"
+          data-aos="zoom-out"
           data-aos-duration="1000"
         >
           <img
-            className="sm:max-w-sm sm:h-auto lg:max-w-lg lg:h-auto  object-cover rounded-2xl border-b-8 border-r-8 rounded-tl-[50%] rounded-tr-[50%] rounded-br-lg rounded-bl-[50%] transition-all"
-            src={profilePicture}
+            className=" sm:max-w-sm sm:h-auto lg:max-w-lg lg:h-auto rounded-xl border-b-8 border-r-8 rounded-tl-[50%] rounded-tr-[50%] rounded-br-lg rounded-bl-[50%] transition-all"
+            src="https://i.ibb.co/jhnTJkV/picture-2.jpg"
             alt="picture"
           />
-          <div className="absolute inset-0 "></div>
         </div>
       </div>
 
       <div
-        className="mt-20 flex items-center justify-between "
-        data-aos="fade-down"
+        className="mt-20 flex items-center justify-end "
+        data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="px-5 flex flex-col items-center gap-4 text-info text-xl absolute left-0">
+        <div className="flex flex-col items-center gap-4 text-info text-xl absolute left-5">
           <Link to="https://www.linkedin.com/" target={"blank"}>
             <FaLinkedin className=""></FaLinkedin>
           </Link>

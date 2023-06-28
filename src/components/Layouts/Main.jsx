@@ -5,18 +5,15 @@ import Footer from "../Footer/Footer";
 
 const Main = () => {
   return (
-    <div className="container mx-auto text-white">
+    <div className="container mx-auto px-2 text-white">
       <div className="flex justify-center items-center">
         <Navbar></Navbar>
       </div>
-      <div className="min-h-[calc(100vh-0px)] ">
+      <div className="min-h-[calc(100vh-0px)]">
         <Outlet />
-        {/* <Footer></Footer> */}
       </div>
+      <Footer></Footer>
     </div>
   );
 };
-
 export default Main;
-
-// bg-gray-800
