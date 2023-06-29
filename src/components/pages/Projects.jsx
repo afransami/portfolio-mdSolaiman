@@ -19,7 +19,6 @@ const Projects = () => {
         <h1 className="text-4xl font-bold text-info mb-10">My Projects</h1>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mb-10">
-
           <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
             <figure>
               <img
@@ -55,7 +54,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </div>       
+          </div>
 
           <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
             <figure>

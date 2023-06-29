@@ -25,7 +25,7 @@ const HomeIntro = () => {
       <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-between items-center ">
         <div
           className="flex flex-col justify-center items-start mb-10 transition-all"
-          data-aos="zoom-in"
+          data-aos="fade-down"
           data-aos-duration="1000"
         >
           <h5 className="text-2xl text-gray-300 text-justify">
@@ -43,11 +43,14 @@ const HomeIntro = () => {
                 }}
               />
             </span>
-            <span className="text-xl">I specialize in creating dynamic and responsive applications using
-            React, Node.js, Express, and MongoDB. With a focus on delivering
-            high-quality solutions, I excel in crafting engaging user interfaces
-            and building robust back-end systems. Let's collaborate and bring
-            your ideas to life with the power of React and the MERN stack!"</span>
+            <span className="text-xl">
+              I specialize in creating dynamic and responsive applications using
+              React, Node.js, Express, and MongoDB. With a focus on delivering
+              high-quality solutions, I excel in crafting engaging user
+              interfaces and building robust back-end systems. Let's collaborate
+              and bring your ideas to life with the power of React and the MERN
+              stack!"
+            </span>
           </h5>
           <div className="flex gap-4 justify-between items-start mt-8">
             <button
@@ -67,13 +70,13 @@ const HomeIntro = () => {
           </div>
         </div>
 
-        <div
+       <div
           className="image w-full h-auto flex justify-center items-center"
-          data-aos="zoom-out"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           <img
-            className=" sm:max-w-sm sm:h-auto lg:max-w-lg lg:h-auto rounded-xl border-b-8 border-r-8 rounded-tl-[50%] rounded-tr-[50%] rounded-br-lg rounded-bl-[50%] transition-all"
+            className=" sm:max-w-full sm:h-auto lg:max-w-lg lg:h-auto rounded-xl border-b-8 border-r-8 rounded-tl-[50%] rounded-tr-[50%] rounded-br-lg rounded-bl-[50%] "
             src="https://i.ibb.co/jhnTJkV/picture-2.jpg"
             alt="picture"
           />

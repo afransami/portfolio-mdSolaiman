@@ -12,7 +12,7 @@ const Home = () => {
     setTimeout(() => setLoading(false), 1000);
   }, []);
   return (
-    <div className="container mx-auto">
+    <div>
       {!loading ? (
         <>
           <HomeIntro></HomeIntro>
