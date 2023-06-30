@@ -1,4 +1,4 @@
-.App {
+/* .App {
     font-family: "Ubuntu", sans-serif;
     width: 100vw;
     height: 100vh;
@@ -8,13 +8,13 @@
     flex-direction: column;
   }
   
-  /* #light {
+  #light {
     background-color: #f3ebf6;
   }
   
   #dark {
     background-color: #46045e;
-  } */
+  }
   
   body {
     margin: 0;
@@ -161,4 +161,4 @@
   
   #dark .switch label {
     color: white;
-  }
+  } */

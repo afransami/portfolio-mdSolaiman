@@ -43,7 +43,7 @@ const Contact = () => {
     <div className="mb-10 relative" id="contact">
 
       <div className="flex flex-col items-center mb-10">
-        <h1 className="text-xl text-gray-300">Keep In Touch</h1>
+        <h1 className="text-xl">Keep In Touch</h1>
         <h1 className="text-4xl font-bold text-info">Contact Me</h1>
       </div>
 

@@ -21,12 +21,9 @@ const HomeIntro = () => {
   const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  };
+    theme === "light" ? setTheme("dark") : setTheme ("light")
+   }
+  
 
   useEffect(() => {
     document.body.className = theme;
