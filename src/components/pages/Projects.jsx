@@ -65,7 +65,7 @@ const Projects = () => {
               />
             </figure>
             <div className="card-body bg-indigo-950 rounded-b-lg">
-              <h2 className="card-title">Thai Taste</h2>
+              <h2 className="card-title">Hublot Toys</h2>
               <p>A chef's MERN stack website.</p>
               <div className="card-actions justify-end">
                 <a
