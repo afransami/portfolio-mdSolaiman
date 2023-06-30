@@ -18,7 +18,7 @@ const Skill = () => {
         data-aos-duration="1000"
       >
         <div className="flex flex-col items-center mt-10">
-          <h1 className="text-xl text-gray-300">Get To Know</h1>
+          <h1 className="text-xl ">Get To Know</h1>
           <h1 className="text-center text-4xl font-bold text-info">
             {" "}
             My Skills

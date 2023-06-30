@@ -6,13 +6,16 @@ import HomeIntro from "./HomeIntro";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 
+
 const Home = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
   }, []);
   return (
+
     <div>
+      
       {!loading ? (
         <>
           <HomeIntro></HomeIntro>
@@ -24,6 +27,7 @@ const Home = () => {
       ) : (
         <LoadingScreen></LoadingScreen>
       )}
+      
     </div>
   );
 };

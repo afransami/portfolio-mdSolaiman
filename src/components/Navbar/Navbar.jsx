@@ -1,10 +1,13 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { FaUserTie, FaBrain } from "react-icons/fa";
 import { ImDisplay, ImHome } from "react-icons/im";
 import { MdEditDocument } from "react-icons/md";
 
+
 const Navbar = () => {
+  
   const NavOptions = (
     <>
       <li>
@@ -37,8 +40,8 @@ const Navbar = () => {
 
   return (
     <div className="fixed bottom-4 bg-indigo-500 bg-opacity-20 rounded-full z-10">
-      <div className="relative menu menu-horizontal px-2 gap-4 text-2xl">
-        {NavOptions}
+      <div className=" menu menu-horizontal px-2 gap-4 text-2xl">
+        {NavOptions}        
       </div>
     </div>
   );

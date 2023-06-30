@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 /* Card.css */
 .card-div {
     width: 300px;
@@ -43,6 +42,30 @@ html {
     animation: image 8s ease-in-out infinite 1s;
 }
 
+.light {
+    background-color: rgb(76, 126, 89);
+    color: black important;
+  }
+  
+  .dark {
+    background-color: rgb(15 23 42); 
+    color: white important;
+    
+
+  }
+
+  .switch label {
+    margin: 10px;
+  }
+  
+  #light .switch label {
+    color: black;
+  }
+  
+  #dark .switch label {
+    color: white;
+  }
+
 @keyframes image {
 
     0% {
@@ -57,3 +80,5 @@ html {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
+
+

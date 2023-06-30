@@ -14,21 +14,45 @@ import { handleDownload } from "../pages/PdfDownload";
 import Typewriter from "typewriter-effect";
 import { Link as ScrollLink } from "react-scroll";
 import "tailwindcss/tailwind.css";
+import ReactSwitch from "react-switch";
+import { useState } from "react";
 
 const HomeIntro = () => {
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
   return (
-    <div className="text-white mt-20 relative" id="home">
+    <div className="mt-20 " id="home">
+      <div className="switch flex justify-center items-center">
+        <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
+        <ReactSwitch
+          onChange={toggleTheme}
+          checked={theme === "dark"}
+        ></ReactSwitch>
+      </div>
+
       <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-between items-center ">
         <div
           className="flex flex-col justify-center items-start mb-10 transition-all"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
-          <h5 className="text-2xl text-gray-300 text-justify">
+          <h5 className="text-2xl  text-justify">
             "Hello, I'm{" "}
             <span>
               <h1 className="text-4xl font-bold text-info">Md Solaiman</h1>
@@ -43,14 +67,14 @@ const HomeIntro = () => {
                 }}
               />
             </span>
-            <span className="text-xl">
+            <p className="text-xl">
               I specialize in creating dynamic and responsive applications using
               React, Node.js, Express, and MongoDB. With a focus on delivering
               high-quality solutions, I excel in crafting engaging user
               interfaces and building robust back-end systems. Let's collaborate
               and bring your ideas to life with the power of React and the MERN
               stack!"
-            </span>
+            </p>
           </h5>
           <div className="flex gap-4 justify-between items-start mt-8">
             <button
@@ -70,7 +94,7 @@ const HomeIntro = () => {
           </div>
         </div>
 
-       <div
+        <div
           className="image w-full h-auto flex justify-center items-center"
           data-aos="fade-up"
           data-aos-duration="1000"

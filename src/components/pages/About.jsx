@@ -11,37 +11,35 @@ const About = () => {
     AOS.init();
     AOS.refresh();
   }, []);
+
   return (
-    <div
-      id="about"
-      className=""      
-    >
+    <div id="about">
       <div className="flex flex-col items-center mb-20">
-        <h1 className="text-xl text-gray-300">Get To Know</h1>
+        <h1 className="text-xl">Get To Know</h1>
         <h1 className="text-4xl font-bold text-info">About Me</h1>
       </div>
 
-      <div className="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 justify-around items-start">
-
-        <div className="image rounded-xl relative flex items-center justify-center mb-10"
-        data-aos="zoom-out"
-        data-aos-duration="1000">
+      <div className="grid lg:grid-cols-2 md:grid-cols-1 justify-between items-center">
+        <div
+          className="image rounded-xl flex items-center justify-center mb-10"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img
             className="rounded-xl border-t-8 border-l-8 sm:max-w-sm sm:h-auto lg:max-w-lg lg:h-auto rounded-tl-lg rounded-tr-[50%] rounded-br-[50%] rounded-bl-[50%] transition-all"
             src="https://i.ibb.co/jhnTJkV/picture-2.jpg"
             alt="about me"
           />
-          <div className="absolute bg-gradient-to-b from-transparent to-indigo-950 opacity-90"></div>
         </div>
 
-        <div className="lg:flex flex-col gap-4 justify-center items-start "
-        data-aos="zoom-in"
-        data-aos-duration="1000">
-
+        <div
+          className="lg:flex flex-col gap-4 justify-center items-start "
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-4 mb-10">
-
             <div className="card w-40 bg-indigo-900">
-            <div className="flex flex-col items-center py-5 justify-center hover:text-info lg:hover:scale-110">
+              <div className="flex flex-col items-center py-5 justify-center hover:text-info lg:hover:scale-110">
                 <p className="text-2xl">
                   <FaAward></FaAward>
                 </p>
@@ -69,7 +67,6 @@ const About = () => {
                 <small>12+ Live Projects</small>
               </div>
             </div>
-
           </div>
 
           <div className="w-full text-justify lg:flex flex-col ">
@@ -104,7 +101,6 @@ const About = () => {
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </div>

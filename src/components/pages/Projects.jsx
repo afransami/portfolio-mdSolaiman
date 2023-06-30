@@ -15,11 +15,11 @@ const Projects = () => {
       data-aos-duration="1000"
     >
       <div className="flex flex-col items-center">
-        <h1 className="text-xl text-gray-300">What Projects I did</h1>
+        <h1 className="text-xl ">What Projects I did</h1>
         <h1 className="text-4xl font-bold text-info mb-10">My Projects</h1>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 mb-10">
-          <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
+          <div className="image-container card card-div max-w-sm h-96  bg-slate-900  shadow-xl">
             <figure>
               <img
                 className="w-96 card-image"
@@ -56,7 +56,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
+          <div className="image-container card card-div max-w-sm h-96  bg-slate-900  shadow-xl">
             <figure>
               <img
                 className="w-96 card-image"
@@ -93,7 +93,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="image-container card card-div max-w-sm h-96  bg-slate-900 text-white shadow-xl">
+          <div className="image-container card card-div max-w-sm h-96  bg-slate-900  shadow-xl">
             <figure>
               <img
                 className="w-96 card-image"
