@@ -10,20 +10,23 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { PiArrowFatLinesDown } from "react-icons/pi";
-import { handleDownload } from "../pages/PdfDownload";
 import Typewriter from "typewriter-effect";
 import { Link as ScrollLink } from "react-scroll";
 import "tailwindcss/tailwind.css";
 import ReactSwitch from "react-switch";
 import { useState } from "react";
+import ResumeFile from "../../assets/Resume-of-Md-Solaiman.pdf"
 
 const HomeIntro = () => {
+  const handleDownload = () => {
+    window.open(ResumeFile, "_blank");
+  };
+
   const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
-    theme === "light" ? setTheme("dark") : setTheme ("light")
-   }
-  
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
 
   useEffect(() => {
     document.body.className = theme;

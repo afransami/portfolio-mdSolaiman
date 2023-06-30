@@ -1,12 +1,16 @@
 import React from "react";
 import { FaAward, FaDownload, FaPhone } from "react-icons/fa";
 import { PiUsersThree, PiProjectorScreenChart } from "react-icons/pi";
-import { handleDownload } from "./PdfDownload";
+import ResumeFile from "../../assets/Resume-of-Md-Solaiman.pdf";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const About = () => {
+  const handleDownload = () => {
+    window.open(ResumeFile, "_blank");
+  };
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
